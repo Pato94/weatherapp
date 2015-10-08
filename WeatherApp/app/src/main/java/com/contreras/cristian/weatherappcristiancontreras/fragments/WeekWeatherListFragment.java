@@ -67,6 +67,6 @@ public class WeekWeatherListFragment extends Fragment {
     }
 
     private void requestWeatherData() {
-        
+
     }
 }
