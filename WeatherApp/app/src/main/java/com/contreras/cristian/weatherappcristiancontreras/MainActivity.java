@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
+
         FragmentManager fm = getFragmentManager();
         if (fm.findFragmentById(R.id.fragmentContainer) == null) {
             fm.beginTransaction().add(R.id.fragmentContainer, WeekWeatherListFragment.newInstance()).commit();

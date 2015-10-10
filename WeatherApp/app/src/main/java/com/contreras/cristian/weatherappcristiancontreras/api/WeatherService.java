@@ -9,6 +9,8 @@ import com.google.gson.GsonBuilder;
 import retrofit.RestAdapter;
 import retrofit.converter.GsonConverter;
 import retrofit.http.GET;
+import retrofit.http.Query;
+import rx.Observable;
 
 /**
  * Created by Pato on 10/8/2015.
@@ -16,7 +18,8 @@ import retrofit.http.GET;
 public class WeatherService {
     private static WeatherService mInstance;
     private final WeatherAPI mAPI;
-    private final static String ENDPOINT = "";
+    private final static String ENDPOINT = "http://api.openweathermap.org/data/2.5/forecast";
+    private final static String APIKEY = "ad30441ec6bf6e2dbb501be9c6a814c1";
 
     public WeatherService(String restUrl) {
 
@@ -33,7 +36,7 @@ public class WeatherService {
         mAPI = mAdapter.create(WeatherAPI.class);
     }
 
-    public static WeatherAPI getAPI() {
+    public WeatherAPI getAPI() {
         return getInstance().mAPI;
     }
 
@@ -43,8 +46,11 @@ public class WeatherService {
         return mInstance;
     }
 
+    public static String getApiKey() {
+        return APIKEY;
+    }
     public interface WeatherAPI {
-        @GET("")
-        public void getWeatherFor();
+        @GET("/daily")
+        Observable<WeatherResponse> getWeatherFor(@Query("q") String cityName, @Query("mode") String mode, @Query("units") String units, @Query("appid") String apiKey);
     }
 }

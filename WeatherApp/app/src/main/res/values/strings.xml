@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WeatherAppCristianContreras</string>
+    <string name="holder_date">Monday, 09/10/2015</string>
+    <string name="holder_temp">Tº</string>
 </resources>

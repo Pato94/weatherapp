@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.contreras.cristian.weatherappcristiancontreras.R;
 import com.contreras.cristian.weatherappcristiancontreras.model.WeatherData;
@@ -24,6 +25,11 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
     private List<WeatherData> mItems;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        @Bind(R.id.imageWeather) ImageView imageWeather;
+        @Bind(R.id.textDate) TextView textDate;
+        @Bind(R.id.textTempMax) TextView textTempMax;
+        @Bind(R.id.textTempMin) TextView textTempMin;
+
         public ViewHolder(View view) {
             super(view);
 
@@ -34,7 +40,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
         }
 
         public void bind(WeatherData item) {
-
+            //textTemp.setText(String.valueOf(item.temp.getMin()) + " - "+ String.valueOf(item.temp.getMax()));
+            textTempMax.setText(String.format("%dº", Math.round(item.temp.getMax())));
+            textTempMin.setText(String.format("%dº", Math.round(item.temp.getMin())));
         }
     }
 
