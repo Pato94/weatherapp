@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">WeatherAppCristianContreras</string>
-    <string name="holder_date">Monday, 09/10/2015</string>
+    <string name="app_name">Weather App Contreras</string>
+    <string name="holder_date">Friday, 09/10/2015</string>
     <string name="holder_temp">Tº</string>
+    <string name="country_name_with_country_code">%1$s (%2$s)</string>
+    <string name="lat_and_lon">lat: %1$f, lon: %2$f</string>
+    <string name="flags_host">http://www.geonames.org/flags/x/%1$s.gif</string>
+    <string name="action_about">About</string>
+    <string name="network_error_title">Network error</string>
+    <string name="network_error_description">A problem occurred while connecting to the server</string>
+    <string name="action_accept">ACCEPT</string>
+    <string name="weather_app_title">Weather App</string>
 </resources>

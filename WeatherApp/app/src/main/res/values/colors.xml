@@ -3,4 +3,30 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="orange">#FEA916</color>
+
+    <color name="teal">#008D7D</color>
+    <color name="persian_green">#00AB9C</color>
+    <color name="ice_cold">#AAE2DC</color>
+    <color name="true_blue">#007FDA</color>
+
+    <color name="lynch">#6B808D</color>
+    <color name="light_gray">#EBEEF0</color>
+    <color name="link_water">#C9D2D7</color>
+    <color name="aluminum">#999999</color>
+    <color name="curious_blue">#ff1B85D8</color>
+    <color name="montana">#3A3A3A</color>
+    <color name="deep_black">#333333</color>
+    <color name="header_blue">#0187D0</color>
+
+    <color name="black_squeeze">#F2F7F8</color>
+    <color name="sapphire">#3E509B</color>
+    <color name="light_sky_blue">#89C9FB</color>
+    <color name="rich_electric_blue">#168AD4</color>
+    <color name="cadmium_red">#F1001C</color>
+    <color name="coral_red">#FB3A42</color>
+    <color name="islamic_green">#009300</color>
+    <color name="charcoal">#454449</color>
+
 </resources>

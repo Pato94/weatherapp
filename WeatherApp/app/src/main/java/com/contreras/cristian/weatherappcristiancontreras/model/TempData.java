@@ -1,15 +1,18 @@
 package com.contreras.cristian.weatherappcristiancontreras.model;
 
+import org.parceler.Parcel;
+
 /**
- * Created by Karen on 09/10/2015.
+ * Created by Pato on 09/10/2015.
  */
+@Parcel
 public class TempData {
-    private float day;
-    private float night;
-    private float min;
-    private float max;
-    private float eve;
-    private float morn;
+    public float day;
+    public float night;
+    public float min;
+    public float max;
+    public float eve;
+    public float morn;
 
     public float getDay() {
         return day;
