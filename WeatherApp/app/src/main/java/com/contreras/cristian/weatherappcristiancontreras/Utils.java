@@ -22,22 +22,22 @@ public class Utils {
         int resId;
         switch (iconId) {
             case "01":
-                resId = R.drawable.sunny;
+                resId = R.drawable.sun_100;
                 break;
             case "02":
-                resId = R.drawable.few_clouds;
+                resId = R.drawable.party_cloudy_100;
                 break;
             case "03":
-                resId = R.drawable.scattered_clouds;
+                resId = R.drawable.clouds_100;
                 break;
             case "04":
-                resId = R.drawable.broken_clouds;
+                resId = R.drawable.clouds_100;
                 break;
             case "10":
-                resId = R.drawable.rain;
+                resId = R.drawable.rain_100;
                 break;
             default:
-                resId = R.drawable.rain;
+                resId = R.drawable.rain_100;
                 break;
         }
         return resId;
